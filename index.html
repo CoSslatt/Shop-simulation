@@ -6,23 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="form.css">
-    
-    <title>Online Market - Form</title>
+
+    <title>Online Market - Store</title>
 
 </head>
 <body>
+    
     <div id="container">
         <div id="nav-bar">
             <a href="index.html"><img id="logo-image" src="images/logos.png"/></a>
-
             <div class="nav-elements">Liked</div>
             <div class="nav-elements"><a href="contact.html">Contact</a></div>
             <div class="nav-elements"><a href="aboutWebsite.html">About website</a></div>
         </div>
-    </div>
-    
-    <script src="form.js"></script>
 
+        <div id="filters-bar">
+            <span id="price-filter-placeholder">Set minimum price</span>
+            <input id="price-filter" type="number"/>
+
+            <div id="apply-filters">Apply</div>
+        </div>
+        <div id="shop-items">
+            
+        </div>
+    </div>
+
+    <script type="module" src="items.js"></script>
+    <script type="module" src="main.js"></script>
+    
 </body>
 </html>

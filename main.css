@@ -1,0 +1,132 @@
+:root {
+    --primary: #2C5364;
+    --secondary: #0F2027;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    color: rgb(111, 142, 161);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+#container { 
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-bar {
+    width: 100%;
+    height: 75px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid black;
+}
+
+#logo-image {
+    margin-top: -50px;
+
+    float: left;
+}
+
+.nav-elements {
+    width: 250px;
+    height: inherit;
+    margin-left: -70px;
+    float: left;
+
+    text-align: center;
+    line-height: 65px;
+
+    transition: 100ms ease-in-out;
+}
+
+.nav-elements:hover {
+    opacity: 0.7;
+    transform: translateY(-5px);
+}
+
+.nav-elements:first-of-type {
+    margin-right: 100px;
+    float: right;
+}
+
+#filters-bar {
+    width: 200px;
+    height: 250px;
+    float: right;
+    
+    margin-top: 50px;
+    margin-right: 500px;
+    
+    border-right: 2px solid #2ca6e2;
+}
+
+#price-filter {
+    width: 50px;
+    height: 25px;
+}
+
+#price-filter-placeholder {
+    font-size: 15px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.448);
+}
+
+#apply-filters {
+    width: 120px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    text-align: center;
+    line-height: 35px;
+
+    margin-top: 180px;      
+    margin-right: 50px;
+
+    float: right;
+
+    border: 3px solid #2ca6e2;
+    color: rgb(165, 195, 206);
+
+    transition: 250ms ease-in-out;
+}
+
+#apply-filters:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+#shop-items {
+    width: 400px;
+    height: 500px;
+
+    float: left;
+    margin-top: 100px;
+    margin-left: 180px;
+}
+
+.item-in-store {
+    width: inherit;
+    height: max-content;
+    margin-top: 10px;
+
+    font-size: 18px;
+}
