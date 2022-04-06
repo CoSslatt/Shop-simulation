@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    
+
     <div id="container">
         <div id="nav-bar">
             <a href="index.html"><img id="logo-image" src="images/logos.png"/></a>
@@ -21,18 +21,29 @@
         </div>
 
         <div id="filters-bar">
-            <span id="price-filter-placeholder">Set minimum price</span>
-            <input id="price-filter" type="number"/>
+                <span id="min-price-filter-placeholder">Set minimum price</span>
+                <input id="min-price-filter" type="number"/>
+
+                <span id="max-price-filter-placeholder">Set maximum price</span>
+                <input id="max-price-filter" type="number"/>
+
+                <div id="computer-units-filter"> Computer's units
+                    <div class="computer-unit">Processors</div>
+                    <div class="computer-unit">Graphics</div>
+                    <div class="computer-unit">RAM</div>
+                    <div class="computer-unit">Computer cases</div>
+                </div>
 
             <div id="apply-filters">Apply</div>
         </div>
+
         <div id="shop-items">
-            
+
         </div>
     </div>
 
     <script type="module" src="items.js"></script>
     <script type="module" src="main.js"></script>
-    
+
 </body>
 </html>

@@ -23,7 +23,7 @@ a {
     text-decoration: none;
   }
 
-#container { 
+#container {
     width: 100%;
     height: 100%;
     margin-left: auto;
@@ -36,8 +36,6 @@ a {
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
-
-    border: 1px solid black;
 }
 
 #logo-image {
@@ -72,22 +70,64 @@ a {
     width: 200px;
     height: 250px;
     float: right;
-    
+
     margin-top: 50px;
     margin-right: 500px;
-    
+
     border-right: 2px solid #2ca6e2;
 }
 
-#price-filter {
+#min-price-filter {
     width: 50px;
     height: 25px;
 }
 
-#price-filter-placeholder {
+#min-price-filter-placeholder {
     font-size: 15px;
     margin-right: 10px;
-    color: rgba(255, 255, 255, 0.448);
+    color: rgba(255, 255, 255, 0.337);
+}
+
+#max-price-filter {
+    width: 50px;
+    height: 25px;
+}
+
+#max-price-filter-placeholder {
+    font-size: 15px;
+    margin-right: 7.5px;
+    color: rgba(255, 255, 255, 0.337);
+}
+
+#computer-units-filter {
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    top: 150px;
+    right: 180px;
+
+    font-size: 23px;
+
+    /* border: 1px solid black; */
+    transition: 100ms ease-out;
+}
+
+#computer-units-filter:hover {
+    transform: translateY(-5px);
+}
+
+.computer-unit {
+    font-size: 19px;
+    margin-top: 10px;
+
+    transition: 200ms ease-in-out;
+
+    visibility: hidden;
+}
+
+.computer-unit:hover {
+    transform: translateX(10px);
 }
 
 #apply-filters {
@@ -98,7 +138,7 @@ a {
     text-align: center;
     line-height: 35px;
 
-    margin-top: 180px;      
+    margin-top: 180px;
     margin-right: 50px;
 
     float: right;
@@ -106,7 +146,7 @@ a {
     border: 3px solid #2ca6e2;
     color: rgb(165, 195, 206);
 
-    transition: 250ms ease-in-out;
+    transition: 150ms ease-in-out;
 }
 
 #apply-filters:hover {

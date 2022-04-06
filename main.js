@@ -1,21 +1,27 @@
-const navElements = document.querySelectorAll('.nav-elements')
-const computerComponents = document.querySelectorAll('.computer-component')
+// const COMPUTER_UNITS_HEADER = document.getElementById('computer-units-filter')
+const computerUnits = document.querySelectorAll('.computer-unit')
 
-const priceFilter = document.getElementById('price-filter');
+//min price filter variables
+const minPriceFilter = document.getElementById('min-price-filter');
+
+//max price filter variables
+const maxPriceFilter = document.getElementById('max-price-filter');
+
 const applyFilters = document.querySelector('#apply-filters');
 
-const storedItemsParent = document.getElementById('shop-items');
+//store
+const storeForItems = document.getElementById('shop-items');
 
-window.addEventListener('mouseover', (e) => {
-    if (e.target.innerText == `Computer's components`
-        || e.target.className == `computer-component`){
-        for (let i = 0; i < computerComponents.length; i++){
-            computerComponents[i].style.visibility = "visible";
+window.addEventListener('mouseover', e => {
+    if (e.target.innerText == `Computer's units`
+        || e.target.className == `computer-unit`){
+        for (let i = 0; i < computerUnits.length; i++){
+            computerUnits[i].style.visibility = "visible";
         }
     }
     else {
-        for (let i = 0; i < computerComponents.length; i++){
-            computerComponents[i].style.visibility = "hidden";
+        for (let i = 0; i < computerUnits.length; i++){
+            computerUnits[i].style.visibility = "hidden";
         }
     }
 });
@@ -24,19 +30,39 @@ window.addEventListener('mouseover', (e) => {
 
 import { items } from "./items.js";
 
-const filteredMinimumPrice = (item) => {
-
+const filteredByPrice = (item = items) => {
     for(let i=0; i < item.length; i++){
 
-        if (item[i].price < priceFilter.value) continue;
+        if (maxPriceFilter.value <= minPriceFilter.value)
+            return window.alert('Is maximum less than minimum?');
 
-        const newChild = storedItemsParent.appendChild(document.createElement('div'));
-        
+        if (item[i].price < minPriceFilter.value ||
+            item[i].price > maxPriceFilter.value) continue;
+
+        const newChild = storeForItems.appendChild(document.createElement('div'));
+
         newChild.classList.add('item-in-store');
         newChild.innerText = `${item[i].mark} ${item[i].specification} PRICE: ${item[i].price}`;
     }
 }
 
-applyFilters.addEventListener('click', (e) => {
-    filteredMinimumPrice(items);
+const filteredByChoose = (e, item = items) => {
+    let currentType = e.target.innerText;
+
+    for (let i = 0; i < item.length; i++){
+        if (item[i].type != currentType) continue;
+
+        const newChild = storeForItems.appendChild(document.createElement('div'));
+
+        newChild.classList.add('item-in-store');
+        newChild.innerText = `${item[i].mark} ${item[i].specification} PRICE: ${item[i].price}`;
+    }
+};
+
+window.addEventListener('click', (event) => {
+    filteredByChoose(event);
+});
+
+applyFilters.addEventListener('click', e => {
+    filteredByPrice();
 });
