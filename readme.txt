@@ -1,9 +1,22 @@
-online shop with articles.
-You are allowed to filter articles.
+## Shop simulation
 
----------------------------------------
+---
 
-all filters in website are working properly but with 1 bug.
+### Working features:
+- Minimum price filter
+- Maximum price filter
+- Choosing components by specification
+- Contact form (I did it only for design)
 
-BUG:
-You must refresh the page before you apply filters. That's because filtered items will be duplicated
+---
+
+### Status:
+- Done
+
+---
+
+### I've learned:
+- 🔰 JS import/export
+- 🔰 JS array methods
+- 🔰 JS how to filtering objects
+- 🔰 CSS keyframes
