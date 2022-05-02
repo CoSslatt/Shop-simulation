@@ -17,6 +17,6 @@
 
 ### I've learned:
 - 🔰 JS import/export
-- 🔰 JS array methods
+- 🔰 JS array methods (finally I didn't add them)
 - 🔰 JS how to filtering objects
 - 🔰 CSS keyframes
