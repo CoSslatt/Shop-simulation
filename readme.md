@@ -15,7 +15,4 @@
 
 ---
 
-### I've learned:
-- 🔰 JS import/export
-- 🔰 JS how to filtering objects
-- 🔰 CSS keyframes
+https://narcikss.github.io/Shop-simulation/
