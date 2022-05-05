@@ -8,6 +8,9 @@
 - Choosing components by specification
 - Contact form (I did it only for design)
 
+### Issues:
+- Child duplication bug: https://github.com/Narcikss/Shop-simulation/issues/6
+
 ---
 
 ### Status:
@@ -15,7 +18,4 @@
 
 ---
 
-### I've learned:
-- 🔰 JS import/export
-- 🔰 JS how to filtering objects
-- 🔰 CSS keyframes
+https://narcikss.github.io/Shop-simulation/
