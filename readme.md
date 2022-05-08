@@ -13,6 +13,11 @@
 
 ---
 
+### Technologies I used:
+- HTML
+- CSS
+- Javascript
+
 ### Status:
 - Done
 
