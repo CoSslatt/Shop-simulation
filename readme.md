@@ -25,4 +25,4 @@
 
 ---
 
-https://narcikss.github.io/Shop-simulation/
+https://cosslatt.github.io/Shop-simulation/
